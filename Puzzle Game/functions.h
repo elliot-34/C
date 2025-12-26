@@ -76,8 +76,8 @@ puzzle find_word_direction(puzzle p,int kelime_numarasi,char guess[SIZE],int r,i
                 int dr=direction[i][0];
                 int dc=direction[i][1];
                 int carpan=strlen(guess);
-                int limitr=carpan*dr+r;
-                int limitc=carpan*dc+c;;
+                int limitr=carpan*dr+r-1;
+                int limitc=carpan*dc+c-1;
                 if(((limitr<0)||(limitr>=SIZE))||((limitc<0)||(limitc>=SIZE))){
                     //Out of limits
                 }
